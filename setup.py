@@ -38,7 +38,7 @@ setup(author="Tomek Czyż",
                    'Topic :: Internet :: WWW/HTTP :: Dynamic Content',
                    'Topic :: Software Development :: Libraries :: Python Modules',
       ],
-      version="0.1",
+      version="0.1.1",
       keywords="django user create syncdb root",
       packages=find_packages('.'),
       )
