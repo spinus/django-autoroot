@@ -8,7 +8,7 @@ def create_superuser(app, created_models,**cos):
            not settings.DEBUG:
             return
         su_name=getattr(settings,'AUTOROOT_USER','root')
-        su_email=getattr(settings,'AUTOROOT_EMAIL','root@localhost')
+        su_email=getattr(settings,'AUTOROOT_EMAIL','root@example.com')
         su_pass=getattr(settings,'AUTOROOT_PASSWORD','qqq')
         try:
             User.objects.get(username=su_name)
