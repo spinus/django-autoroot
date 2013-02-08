@@ -3,6 +3,9 @@
 from distutils.core import setup
 from setuptools import find_packages
 
+import autoroot
+
+
 setup(author="Tomek Czyż",
       author_email='tomekczyz@gmail.com',
       description='automaticly creates `root` user after syncdb if not exists',
@@ -21,7 +24,7 @@ setup(author="Tomek Czyż",
                    'Topic :: Internet :: WWW/HTTP :: Dynamic Content',
                    'Topic :: Software Development :: Libraries :: Python Modules',
       ],
-      version="0.1.1",
+      version=autoroot.__version__,
       keywords="django user create syncdb",
       packages=find_packages('.'),
       )
