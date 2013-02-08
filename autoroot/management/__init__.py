@@ -14,7 +14,7 @@ def create_superuser(app, created_models,**cos):
             User.objects.get(username=su_name)
         except User.DoesNotExist:
             User.objects.create_superuser(su_name, su_email,su_pass)
-            print "Superuser created (%s:%s)"%(su_name, su_pass)
+            print "Superuser created (%s:%s:%s)"%(su_name, su_email, su_pass)
 
 post_syncdb.connect(create_superuser,sender=None)
 
