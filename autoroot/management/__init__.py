@@ -3,7 +3,7 @@ from django.db.models.signals import post_syncdb
 from django.contrib.auth.models import User
 
 def create_superuser(app, created_models,**cos):
-        import settings
+        from django.conf import settings
         if getattr(settings, 'AUTOROOT_DEBUG_ONLY', True) and \
            not settings.DEBUG:
             return
